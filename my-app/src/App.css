@@ -22,6 +22,16 @@
   color: #61dafb;
 }
 
+.board-row {
+  
+}
+
+.square {
+  padding: 50px;
+  min-width: 50px;
+  min-height: 50px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -29,4 +39,6 @@
   to {
     transform: rotate(360deg);
   }
+
+
 }
