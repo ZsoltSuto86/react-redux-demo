@@ -1,0 +1,1 @@
+//TODO here comes the same page with react redux
