@@ -7,7 +7,6 @@
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
-<<<<<<< HEAD
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-bootstrap": "^0.24.4",
@@ -17,10 +16,6 @@
     "redux-devtools-extension": "^2.13.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
-=======
-    "react-router-redux": "^5.0.0-alpha.9",
-    "react-scripts": "2.0.4"
->>>>>>> e751c6534926e65dfd90d2e49130bbdc7c60c45c
   },
   "scripts": {
     "start": "react-scripts start",
