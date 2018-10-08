@@ -1,0 +1,2 @@
+export const LOAD_API_SUCCESS = 'LOAD_API_SUCCESS';
+export const LOAD_API_ERROR = 'LOAD_API_ERROR';

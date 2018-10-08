@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
+import {connect} from 'react-redux';
+import Main from './RoutingHandler';
+import { withRouter } from 'react-router';
 import logo from './logo.svg';
 import './App.css';
 
@@ -7,22 +11,21 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <LinkContainer to="/list">
+          <button>Take me to list</button>
+          </LinkContainer>
         </header>
+        <Main/>
       </div>
-    );
-  }
-}
-
-export default App;
+        );
+      }
+    }
+    
+    function mapStateToProps(state) {
+      //const {isAuthenticated} = state.loginReducer;
+      return {
+        //isAuthenticated
+      }
+    }
+    
+    export default withRouter(connect(mapStateToProps)(App));
