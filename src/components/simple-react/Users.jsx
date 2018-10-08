@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import ListOfUsers from './ListOfUsers';
-import UserForm from './UserForm';
+import UsersForm from './UserForm';
+
 
 class Users extends React.Component {
 
@@ -23,9 +24,9 @@ class Users extends React.Component {
         return(
             <div>
             <p>Random Users</p>
-            <Button onClick={this.getrandomUsers}>Get Users</Button>
+            <Button bsStyle="danger" bsSize="large" onClick={this.getrandomUsers}>Get Users</Button>
             <ListOfUsers users={this.state}/>
-            <UserForm />
+            <UsersForm />
             </div>
         )
     }
