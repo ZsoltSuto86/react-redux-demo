@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'react-bootstrap';
+import { Table, Image } from 'react-bootstrap';
 
 class ListOfUsers extends React.Component {
 
@@ -32,7 +32,7 @@ class ListOfUsers extends React.Component {
                                 <td>{user.name.last}</td>
                                 <td>{user.email}</td>
                                 <td>{user.cell}</td>
-                                <td href={user.picture.thumbnail}></td>
+                                <td><Image src={user.picture.thumbnail}/></td>
                             </tr>
                             )
                         }                           
